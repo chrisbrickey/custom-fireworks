@@ -7,6 +7,9 @@
     "doc": "docs",
     "lib": "lib"
   },
+  "engines": {
+    "node": "6.10.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "webpack"
