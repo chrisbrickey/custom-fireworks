@@ -6,13 +6,13 @@
   width: 98vw;
   height: 98vh;
   display: flex;
-   background-image: url('https://res.cloudinary.com/dckkkjkuz/image/upload/v1501524783/fireworks/blue-starry-night.png');
-  /*background-color: black;*/
-
+  background-image: url('https://res.cloudinary.com/dckkkjkuz/image/upload/v1501524783/fireworks/blue-starry-night.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .innershell {
-  background-color: orange;
+  /*background-color: orange;*/
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -21,7 +21,7 @@
 }
 
 .title {
-  background-color: black;
+  /*background-color: black;*/
   margin: 5px;
   padding: 5px;
   font-size: 40px;
@@ -30,22 +30,23 @@
  }
 
 .filler {
-  background-color: grey;
+  /*background-color: grey;*/
   flex: 1;
   margin: 5px;
   padding: 5px;
 }
 
 .main {
-  background-color: blue;
+  /*background-color: blue;*/
   display: flex;
   flex-direction: row;
+  justify-content: bottom;
   margin: 5px;
   padding: 5px;
 }
 
 .control-container {
-  background-color: red;
+  background-color: yellow;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -54,13 +55,14 @@
 }
 
 .canvas-container {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   margin: 5px;
   padding: 5px;
+  display: flex;
 }
 
 #myCanvas {
   border: 2px;
-  border-color: grey;
+  border-color: white;
   border-style: dashed;
 }
