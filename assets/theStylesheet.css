@@ -1,0 +1,56 @@
+.test {
+  color: blue;
+ }
+
+ .outershell {
+   width: 95vw;
+   height: 95vh;
+   display: flex;
+   background-color: grey;
+   margin: 10px;
+   padding: 10px;
+ }
+
+.innershell {
+   background-color: orange;
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: bottom;
+   margin: 10px;
+   padding: 10px;
+ }
+
+ .title {
+   background-color: yellow;
+   height: 30px;
+   margin: 10px;
+   padding: 10px;
+ }
+
+ .body {
+   background-color: blue;
+   display: flex;
+   flex-direction: row;
+   margin: 10px;
+   padding: 10px;
+ }
+
+ .control-container {
+   background-color: red;
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   padding: 10px;
+ }
+
+.canvas-container {
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+#myCanvas {
+  border: 1px;
+  border-style: dashed;
+}
