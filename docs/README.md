@@ -1,4 +1,4 @@
-## Firework Fantasy
+## Custom Fireworks
 
 ### Background
 
