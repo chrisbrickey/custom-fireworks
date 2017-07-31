@@ -6,7 +6,9 @@
   width: 98vw;
   height: 98vh;
   display: flex;
-  background-color: black;
+   background-image: url('https://res.cloudinary.com/dckkkjkuz/image/upload/v1501524783/fireworks/blue-starry-night.png');
+  /*background-color: black;*/
+
 }
 
 .innershell {
@@ -58,6 +60,7 @@
 }
 
 #myCanvas {
-  border: 1px;
+  border: 2px;
+  border-color: grey;
   border-style: dashed;
 }
