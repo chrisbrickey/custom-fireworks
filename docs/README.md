@@ -33,43 +33,48 @@ When the user first opens the app, a modal will overlay the main screen showing 
 
 This project will be implemented with the following technologies:
 
-- Vanilla JavaScript and `jquery` for overall structure and game logic,
-- `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering,
-- Webpack to bundle and serve up the various scripts.
+- Vanilla JavaScript for overall structure and game logic
+- `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering
+- `Tween.js` for firework trajectory
+- `Sound.js` for firework 'boom'
+- `Webpack` to bundle and serve up the various scripts
 
 In addition to the webpack entry file, there will be three scripts involved in this project:
 
-`board.js`: this script will handle the logic for creating and updating the necessary `Easel.js` elements and rendering them to the DOM.
+`display.js`: creates and updates the main page and instruction modal by rendering  Easel elements to the DOM.
 
-`automata.js`: this script will handle the logic behind the scenes.  An Automata object will hold a `type` (hexagon, triangle, or square) and a 2D array of `Cell`s.  It will be responsible for doing neighbor checks for each `Cell` upon iteration and updating the `Cell` array appropriately.
+`logic.js`: stores the firework details and the order of fireworks, handles the logic for showing the sequence  
 
-`cell.js`: this lightweight script will house the constructor and update functions for the `Cell` objects.  Each `Cell` will contain a `type` (hexagon, triangle, or square) and an `aliveState` (`true` or `false`).
+`firework.js`: includes the constructor and update functions for the `firework` objects
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed.  Create `webpack.config.js` as well as `package.json`.  Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of `Easel.js`.  Goals for the day:
+**Day 1**
 
-- Get a green bundle with `webpack`
-- Learn enough `Easel.js` to render an object to the `Canvas` element
+- Setup Node modules, create `webpack.config.js`, `package.json` and `entry.js`.
+- Construct and connect script files.  
+- Create successful build via heroku.
+- Learn the basics of `HTML5 Canvas` and `Easel.js`.
 
-**Day 2**: Dedicate this day to learning the `Easel.js` API.  First, build out the `Cell` object to connect to the `Board` object.  Then, use `board.js` to create and render at least the square grid, ideally all 3 grid types.  Build in the ability to toggle the live/dead states on click for each cell.  Goals for the day:
+**Day 2**
 
-- Complete the `cell.js` module (constructor, update functions)
-- Render a square grid to the `Canvas` using `Easel.js`
-- Make each cell in the grid clickable, toggling the state of the square on click
-- Do the same for triangular and hexagonal grids
+- Render outline of the main page.
+- Add one firework to the display.
+- Begin building the logic to control fireworks.
+- Find sound file(s) for the fireworks.
 
-**Day 3**: Create the automata logic backend.  Build out modular functions for handling the different grid types along with their unique neighbor checks and rule sets.  Incorporate the automata logic into the `Board.js` rendering.  Goals for the day:
+**Day 3**
 
-- Export an `Automata` object with correct type and handling logic
-- Have a functional grid on the `Canvas` frontend that correctly handles iterations from one generation of the game to the next
+- Render details of display and user controls.
+- Build remaining fireworks.
+- Complete logic for saving and displaying fireworks.
+- Connect to custom domain and setup binary canary.
 
 
-**Day 4**: Install the controls for the user to interact with the game.  Style the frontend, making it polished and professional.  Goals for the day:
+**Day 4**:
 
-- Create controls for game speed, stop, start, reset, and shape type
-- Have a styled `Canvas`, nice looking controls and title
-- If time: include buttons on the side to toggle the color scheme of the cells
+- Render instructional modal.
+- Refine app.
 
 
 ### Bonus features
