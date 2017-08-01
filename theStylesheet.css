@@ -1,5 +1,13 @@
 * {
-  font-family: 'Covered By Your Grace', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-family: 'Monoton', cursive;
+  /*font-family: 'Covered By Your Grace', cursive;*/
+  /*font-family: 'Bowlby One SC', cursive;*/
+  /*font-family: 'Kanit', sans-serif;*/
+  /*font-family: 'Courgette', cursive;*/
+  /*font-family: 'Permanent Marker', cursive;*/
+  /*font-family: 'Raleway', sans-serif;*/
  }
 
  .outershell {
@@ -25,8 +33,9 @@
   margin: 5px;
   padding: 5px;
   font-size: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: white;
+  /*font-weight: bold;*/
  }
 
 .filler {
