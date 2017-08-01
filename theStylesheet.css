@@ -70,6 +70,7 @@
   background-color: pink;
   white-space: nowrap;
   margin: 5px 0px 5px 0px;
+  cursor: pointer;
 }
 
 #demo {
