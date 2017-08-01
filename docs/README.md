@@ -10,7 +10,7 @@ In Custom Fireworks, users will be able to:
 
 - [ ] Select the color/shape of individual fireworks
 - [ ] Select the location at which fireworks will be deployed
-- [ ] Select the order in which fireworks are deployed
+- [ ] Allow multiple fireworks to be fired at the same time (e.g. finale where every firework goes off at once)
 - [ ] Hear (and mute) the fireworks show
 - [ ] Start, pause, and reset the display
 
@@ -36,7 +36,7 @@ This project will be implemented with the following technologies:
 - Vanilla JavaScript for overall structure and game logic
 - `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering
 - `Tween.js` for firework trajectory
-- `Sound.js` for firework 'boom'
+- `Sound.js` for firework 'boom' (may also be able to do this with vanilla JS soundboard)
 - `Webpack` to bundle and serve up the various scripts
 
 In addition to the webpack entry file, there will be three scripts involved in this project:
@@ -70,7 +70,6 @@ In addition to the webpack entry file, there will be three scripts involved in t
 - Complete logic for saving and displaying fireworks.
 - Connect to custom domain and setup binary canary.
 
-
 **Day 4**:
 
 - Render instructional modal.
@@ -79,6 +78,6 @@ In addition to the webpack entry file, there will be three scripts involved in t
 
 ### Bonus features
 
-- [ ] Allow multiple fireworks to be fired at the same time
-- [ ] Add speed controller to speed up and slow down the fireworks display
+- [ ] Add speed controller to speed up and slow down the fireworks display (set up as input to setInterval)
+- [ ] Select the order in which fireworks are deployed
 - [ ] Enable users to build their own fireworks by designing color, shape, explosion trajectory, sound, etc.
