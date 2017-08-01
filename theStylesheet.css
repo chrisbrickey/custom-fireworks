@@ -1,7 +1,7 @@
 * {
   /*font-family: 'Montserrat', sans-serif;*/
   /*font-family: 'Ubuntu', sans-serif;*/
-  font-family: 'Monoton', 'Kanit', sans-serif;
+  font-family: 'Kanit', sans-serif;
   /*font-family: 'Covered By Your Grace', cursive;*/
   /*font-family: 'Bowlby One SC', cursive;*/
   /*font-family: 'Kanit', sans-serif;*/
@@ -32,6 +32,7 @@
   /*background-color: black;*/
   margin: 5px;
   padding: 5px;
+    font-family: 'Monoton', 'Kanit', sans-serif;
   font-size: 50px;
   letter-spacing: 3px;
   color: white;
@@ -61,6 +62,22 @@
   flex-direction: column;
   margin: 5px;
   padding: 5px;
+}
+
+.button {
+  height: 20px;
+  width: 100px;
+  background-color: pink;
+  white-space: nowrap;
+  margin: 5px 0px 5px 0px;
+}
+
+#demo {
+
+}
+
+#F1 {
+
 }
 
 .canvas-container {
