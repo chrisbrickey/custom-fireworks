@@ -8,31 +8,13 @@
 
         <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Courgette|Covered+By+Your+Grace|Kanit|Monoton|Montserrat|Permanent+Marker|Raleway|Ubuntu" rel="stylesheet">
 
-        <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
-
-        <script>
-            function init() {
-              let stage = new createjs.Stage("myCanvas");
-
-              var circle = new createjs.Shape();
-              circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
-              circle.x = 100;
-              circle.y = 100;
-              stage.addChild(circle);
-
-            }
-        </script>
 
     </head>
 
-    <body onload="init();">
+    <body>
 
         <div class="outershell">
-
-
-
             <div class="innershell">
-
 
                 <header class="title">Fireworks Show</header>
 
@@ -44,7 +26,7 @@
 
                     <div class="canvas-container">
 
-                        <canvas id="myCanvas" width="1000" height="700">
+                        <canvas id="myCanvas">
                             Sorry, your browser doesn't support canvas technology.  Upgrade your browser to see this content.
                         </canvas>
 
@@ -52,6 +34,7 @@
 
 
                 </div>
+                
             </div>
         </div>
 
