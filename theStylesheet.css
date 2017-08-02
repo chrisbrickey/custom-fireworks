@@ -29,6 +29,9 @@
 }
 
 .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   /*background-color: black;*/
   margin: 5px;
   padding: 5px;
@@ -39,41 +42,68 @@
   /*font-weight: bold;*/
  }
 
-.filler {
-  /*background-color: grey;*/
+/*.filler {
+  background-color: grey;
   flex: 1;
   margin: 5px;
   padding: 5px;
-}
+}*/
 
 .main {
   /*background-color: blue;*/
   display: flex;
-  flex-direction: row;
-  justify-content: bottom;
+  flex: 1;
+  flex-direction: column;
+  /*justify-content: bottom;
+  align-items: bottom;*/
   margin: 5px;
   padding: 5px;
+}
+
+.canvas-container {
+  flex: 1;
+  /*background-color: lightblue;*/
+  display: flex;
+  margin: 5px;
+  /*padding: 5px;*/
+}
+
+#myCanvas {
+  border: 2px;
+  border-color: white;
+  border-style: dashed;
+  width: 100%;
+  height: 100%;
 }
 
 .control-container {
-  background-color: yellow;
-  flex: 1;
+  /*background-color: yellow;*/
   display: flex;
-  flex-direction: column;
-  margin: 5px;
-  padding: 5px;
+  /*flex: 1;*/
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+  padding: 0px;
 }
 
 .button {
-  height: 20px;
-  width: 100px;
+  height: 40px;
+  width: 75px;
   background-color: pink;
-  white-space: nowrap;
-  margin: 5px 0px 5px 0px;
+  /*white-space: nowrap;*/
+  margin: 5px;
   cursor: pointer;
+  font-size: 12px;
+  line-height: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 3px;
 }
 
-#demo {
+#how {
 
 }
 
@@ -81,15 +111,14 @@
 
 }
 
-.canvas-container {
-  /*background-color: lightblue;*/
-  margin: 5px;
-  padding: 5px;
-  display: flex;
+#play-pause {
+
 }
 
-#myCanvas {
-  border: 2px;
-  border-color: white;
-  border-style: dashed;
+#reset {
+
+}
+
+#demo {
+
 }
